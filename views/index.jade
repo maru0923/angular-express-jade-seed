@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  ul.menu
+    li
+      a(href='#/view1') view1
+    li
+      a(href='#/view2') view2
+
+  div(ng-view)
+
+  div Angular seed app: v
+    span(app-version)
+
+  //
+  //In production use:
+  //script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js')
+  //
+  script(src='lib/angular/angular.js')
+  script(src='javascripts/app.js')
+  script(src='javascripts/services.js')
+  script(src='javascripts/controllers.js')
+  script(src='javascripts/filters.js')
+  script(src='javascripts/directives.js')
